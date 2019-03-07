@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+header{
+    background-image: url("../assets/images/header-bg.jpg");
+}
+
+.container{
+    padding: 10px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    display: inline-block;
+    width: 280px;
+    position: relative;
+}
+
+.logo img{
+    padding-right:15px;
+    border-right: 1px solid white; 
+}
+
+select{
+    position: absolute;
+    right: 0;
+    top: 21px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;   
+    background-image: url("../images/header-bg.jpg");
+}
+
+nav{
+    display: flex;
+    /* justify-content:  */
+}
+
+/* nav ul {
+    display: flex; 
+    justify-content: space-between;
+    list-style: none;
+}
+
+ul li, li a{
+    padding-right: 25px;
+    font-size: 18px;
+    color: white;
+    padding-top: 18px;
+    text-decoration: none;
+} */
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-image: url("../images/header-bg.jpg");
+
+    display: flex; 
+    justify-content: space-between;
+}
+
+ul li {
+    display: block;
+    position: relative;
+    /* color: white; */
+    float: left;
+    background-image: url("../images/header-bg.jpg");
+}
+
+li ul { 
+    display: none; 
+}
+
+ul li a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #fff;
+}
+
+ul li a:hover { 
+    background-image: url("../images/header-bg.jpg"); 
+}
+
+li:hover > ul {
+    display: block;
+    position: absolute;
+}
+
+li:hover li { 
+    float: none; 
+}
+
+li:hover a { 
+    background-image: url("../images/header-bg.jpg"); 
+}
+
+li:hover li a:hover { 
+    background-image: url("../images/header-bg.jpg"); 
+}
+
+nav li ul li { 
+    border-top: 0; 
+}
+
+ul ul ul {
+    left: 100%;
+    top: 0;
+}
+
+ul:before, ul:after {
+    content: " ";
+    display: table;
+}
+
+ul:after { 
+    clear: both; 
+}
+
+
+
+
+.banner{
+    background-image: url("../assets/images/banner-bg.jpg");
+    background-size: cover;
+    color: white;
+    padding: 150px 50px;
+}
+
+h1{
+    font-size: 60px;
+    text-align: center;
+}
+
+.banner p{
+    font-size: 18px;
+    text-align: center;
+}
+
+button{
+    background-image: linear-gradient(to right, #f06000, #ff2100 );
+    color: white;
+    width: 178px;
+    height: 48px;
+    border: none;
+    border-radius: 50px;
+    font-size: 15px;
+    margin: 35px auto; 
+    display: block;
+}
+
+.main{
+    margin: 0% auto 20px;
+}
+
+h2{
+    text-align: center;
+    margin: 50px 0;
+    font-size: 60px;
+    color: #424556;
+}
+
+.main-container{
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 50px lightgray;
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* .card{
+    /* background-image: url("../assets/images/image-1.png"); 
+    background-size: cover;
+    border: 1px solid green;
+    width: 100%;
+    padding-bottom: 100px;
+} */
+
+.card{
+    position: relative;
+}
+
+.play{
+    position: absolute;
+    right: 80px;
+    bottom: 150px;
+    width: 250px;
+    height: 110px;
+    background-color: #fff;
+    opacity: .85;
+    border-radius: 10px;
+}
+
+.play-button{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 30px; 
+    left: -25px;
+    color: white;
+    /* opacity: 1; */
+    border-radius: 50%;
+    background-color: #fba300;
+}
+
+.right-arrow{
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid white;
+    left: 20px;
+    top: 15px;
+}
+
+.name{
+    text-align: center;
+    /* text-align: left; */
+    margin-top: 40px;
+    color: #434556;
+    font-weight: 700;
+}
+
+td .name{
+    margin-top: 0;  
+    text-align: left;
+}
+
+.post{
+    text-align: center;
+    color: #7a7f94;
+}
+
+td .post{
+    text-align: left;
+}
+
+.card img{
+    /* border: 1px solid green; */
+    width: 100%;
+}
+
+.suggestion {
+    /* border: 1px solid red; */
+    display: flex;  
+    flex-direction: column;
+}
+
+.arrow{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 10px;
+    height: 480px;;
+}
+
+td{
+    position: relative;
+}
+
+.play-btn{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 55px; 
+    left: 80px;
+    border-radius: 50%;
+    background-color: #fba300;
+}
+
+.ryt-arrow{
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 12px solid white;
+    left: 19px;
+    top: 14px;
+}
+
